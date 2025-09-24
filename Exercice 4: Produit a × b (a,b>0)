@@ -1,0 +1,20 @@
+Exercice 4: Produit a × b (a,b>0). Il est constitué de commentaire a chaque ligne, qui explique chaque paragraphe de code.
+#include <stdio.h>   
+
+int main() {
+    int a, b, produit = 0, i;   // Déclaration des variables
+
+    printf("Entrez deux entiers positifs a et b : ");
+    scanf("%d %d", &a, &b);     // Lecture des deux entiers a et b
+
+    if(a > 0 && b > 0) {        // Vérifie si a et b sont positifs
+        for(i = 0; i < b; i++) {
+            produit += a;       // Ajoute a à produit, répété b fois (simulation de la multiplication)
+        }
+        printf("Le produit de %d et %d est : %d\n", a, b, produit);
+    } else {                    
+        printf("Erreur : a et b doivent etre positifs.\n");
+    }
+
+    return 0;                   
+}
